@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fff5f5;
+  --color-brand-100: #ffe6e6;
+  --color-brand-200: #ffc9c9;
+  --color-brand-300: #ffa3a3;
+  --color-brand-400: #ff6f6f;
+  --color-brand-500: #ff2d20; /* Laravel Red */
+  --color-brand-600: #e61d10;
+  --color-brand-700: #c2130a;
+  --color-brand-800: #a1110a;
+  --color-brand-900: #85130d;
+  
+  --font-sans: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  *, ::before, ::after {
+    border-color: #e4e4e7; /* zinc-200 */
+  }
+
+  body {
+    background-color: #fafafa;
+    color: #18181b;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Otimizado para performance: removido SVG Fractal Noise pesado */
+    background-image: 
+      radial-gradient(ellipse at 10% 0%, rgba(255, 45, 32, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 100%, rgba(0, 0, 0, 0.04) 0%, transparent 50%),
+      radial-gradient(#d4d4d8 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 24px 24px;
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-rose-500;
+  }
+  
+  .border-grid {
+    @apply border-zinc-200;
+  }
+
+  .divide-grid > :not([hidden]) ~ :not([hidden]) {
+    @apply border-zinc-200;
+  }
+  
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-md border border-zinc-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
