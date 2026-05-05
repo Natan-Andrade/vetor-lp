@@ -28,13 +28,38 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     
-    /* Otimizado para performance: removido SVG Fractal Noise pesado */
+    /* Otimizado para performance */
     background-image: 
       radial-gradient(ellipse at 10% 0%, rgba(255, 45, 32, 0.08) 0%, transparent 50%),
       radial-gradient(ellipse at 90% 100%, rgba(0, 0, 0, 0.04) 0%, transparent 50%),
       radial-gradient(#d4d4d8 1px, transparent 1px);
     background-size: 100% 100%, 100% 100%, 24px 24px;
     background-attachment: fixed;
+  }
+
+  /* Custom Themed Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f4f4f5; /* zinc-100 */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4d4d8; /* zinc-300 */
+    border-radius: 5px;
+    border: 2px solid #f4f4f5;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff2d20; /* brand-500 */
+  }
+
+  /* Firefox Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #d4d4d8 #f4f4f5;
   }
 }
 
@@ -53,6 +78,12 @@
   
   .glass-card {
     @apply bg-white/60 backdrop-blur-md border border-zinc-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)];
+  }
+
+  /* Performance: Content visibility for better rendering speed */
+  .section-optimize {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 500px;
   }
 
   .hide-scrollbar::-webkit-scrollbar {

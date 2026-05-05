@@ -38,19 +38,23 @@ function App() {
         <main className="flex-1 pt-16 flex flex-col gap-12 sm:gap-0 pb-12 sm:pb-0">
           <Hero />
 
-          <Suspense fallback={<div className="h-32 flex items-center justify-center text-zinc-300 text-xs">Carregando...</div>}>
-            <div id="problema">
+          <Suspense fallback={<div className="h-32 flex items-center justify-center text-zinc-300 text-xs text-center p-20">Carregando experiência...</div>}>
+            <div id="problema" className="section-optimize">
               <Problem />
             </div>
-            <div id="solucao">
+            <div id="solucao" className="section-optimize">
               <Solution />
             </div>
-            <Demo />
-            <div id="benefits">
+            <div className="section-optimize">
+              <Demo />
+            </div>
+            <div id="benefits" className="section-optimize">
               <Benefits />
             </div>
-            {/* <SocialProof /> */}
-            <CTASection />
+            {/* <div className="section-optimize"><SocialProof /></div> */}
+            <div className="section-optimize">
+              <CTASection />
+            </div>
           </Suspense>
         </main>
 
