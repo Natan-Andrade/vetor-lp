@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-sm sm:text-lg text-zinc-700 mb-8 sm:mb-10 max-w-lg leading-relaxed">
-              A arquitetura perfeita para sua marcenaria. Centralize orçamentos, projetos e clientes em uma interface construída para quem busca excelência técnica.
+              Transforme o caos em previsibilidade. Entregamos uma <strong>Landing Page pronta</strong> para captar clientes na internet e um <strong>Sistema de Gestão</strong> robusto para centralizar orçamentos, projetos e produção em um só lugar.
             </p>
 
             {/* Buttons */}

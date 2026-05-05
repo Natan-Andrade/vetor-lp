@@ -5,12 +5,12 @@ import { TrendingUp, ShieldCheck, Zap, DollarSign } from 'lucide-react';
 const benefits = [
   {
     title: "Organização",
-    description: "Cada projeto tem seu lugar definido. Adeus à bagunça de papéis.",
+    description: "Cada projeto e orçamento tem seu lugar definido. Diga adeus à bagunça de papéis e planilhas.",
     icon: <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
   },
   {
     title: "Menos Erros",
-    description: "Medidas e prazos centralizados. Evite cortes errados.",
+    description: "Medidas e prazos centralizados. Evite cortes errados ou atrasos.",
     icon: <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5" />
   },
   {
@@ -29,11 +29,11 @@ const Benefits = () => {
   return (
     <section className="border-b border-grid bg-transparent text-zinc-900">
       <div className="grid lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-grid">
-        
+
         {/* Header Column */}
         <div className="lg:col-span-5 p-6 sm:p-8 lg:p-12 xl:p-16 flex flex-col justify-center relative overflow-hidden bg-zinc-50/50">
           <div className="absolute inset-0 pointer-events-none opacity-30"
-               style={{ backgroundImage: 'linear-gradient(to right, #e4e4e7 1px, transparent 1px), linear-gradient(to bottom, #e4e4e7 1px, transparent 1px)', backgroundSize: '48px 48px' }}>
+            style={{ backgroundImage: 'linear-gradient(to right, #e4e4e7 1px, transparent 1px), linear-gradient(to bottom, #e4e4e7 1px, transparent 1px)', backgroundSize: '48px 48px' }}>
           </div>
 
           <motion.div
@@ -48,7 +48,7 @@ const Benefits = () => {
               <span className="text-brand-500">crescer</span>
             </h2>
             <p className="text-sm text-zinc-600 leading-relaxed">
-              Não adianta ter as melhores máquinas se a gestão está travando a sua produção. Desenvolvemos as ferramentas certas na fundação do seu negócio para você focar apenas na madeira.
+              Não adianta ter as melhores máquinas se a gestão está travando a sua produção. Desenvolvemos as ferramentas certas na fundação do seu negócio para você focar apenas no seu produto.
             </p>
           </motion.div>
         </div>
@@ -58,7 +58,7 @@ const Benefits = () => {
           <div className="grid grid-cols-2 sm:grid-cols-2 divide-x divide-y divide-grid h-full relative">
             {/* Fix for top border on the first row when using divide-y */}
             <div className="absolute top-0 left-0 w-full h-px bg-zinc-200 hidden"></div>
-            
+
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}

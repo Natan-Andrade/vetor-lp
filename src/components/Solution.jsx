@@ -1,22 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { LayoutDashboard, Users, Clock } from 'lucide-react';
+import { Globe, FileText, CreditCard, Search } from 'lucide-react';
 
 const features = [
   {
-    icon: <LayoutDashboard className="w-4 h-4 sm:w-5 sm:h-5 text-brand-500" />,
-    title: "Controle Central",
-    description: "Pipeline visual do orçamento à entrega final."
+    icon: <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-brand-500" />,
+    title: "Site com Captação",
+    description: "Clientes preenchem formulários de interesse no seu site exclusivo e caem direto no painel."
   },
   {
-    icon: <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-brand-500" />,
-    title: "Status Real",
-    description: "Identifique gargalos de produção rapidamente."
+    icon: <FileText className="w-4 h-4 sm:w-5 sm:h-5 text-brand-500" />,
+    title: "Orçamentos Online",
+    description: "Crie, envie e aprove orçamentos dentro do sistema. Sem papel, sem esquecimentos."
   },
   {
-    icon: <Users className="w-4 h-4 sm:w-5 sm:h-5 text-brand-500" />,
-    title: "CRM Integrado",
-    description: "Tenha todo o histórico do cliente em um clique."
+    icon: <CreditCard className="w-4 h-4 sm:w-5 sm:h-5 text-brand-500" />,
+    title: "Controle Financeiro",
+    description: "Gestão inteligente de contas a pagar e receber. Saiba exatamente qual é o seu lucro real."
+  },
+  {
+    icon: <Search className="w-4 h-4 sm:w-5 sm:h-5 text-brand-500" />,
+    title: "Portal do Cliente",
+    description: "Seu cliente acompanha a produção e entrega do móvel por um link, sem precisar perguntar no WhatsApp."
   }
 ];
 
@@ -24,12 +29,12 @@ const Solution = () => {
   return (
     <section className="sm:border-b border-grid bg-transparent">
       <div className="grid xl:grid-cols-2 divide-y sm:divide-y-0 xl:divide-x divide-grid">
-        
+
         {/* Visual Component Area */}
         <div className="p-4 sm:p-8 lg:p-16 bg-zinc-50/50 flex items-center justify-center relative overflow-hidden order-last xl:order-first border-t border-grid sm:border-t-0">
           {/* Dashed Grid Overlay for Blueprint feel */}
           <div className="absolute inset-0 pointer-events-none opacity-40 border-r border-dashed border-grid"
-               style={{ backgroundImage: 'linear-gradient(to right, #e4e4e7 1px, transparent 1px), linear-gradient(to bottom, #e4e4e7 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
+            style={{ backgroundImage: 'linear-gradient(to right, #e4e4e7 1px, transparent 1px), linear-gradient(to bottom, #e4e4e7 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
           </div>
 
           <motion.div
@@ -57,13 +62,13 @@ const Solution = () => {
                     <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-yellow-400"></span>
                     <span className="text-[9px] sm:text-[10px] font-semibold text-zinc-700 uppercase tracking-wide">Orçamento</span>
                   </div>
-                  
+
                   <div className="border border-zinc-200 p-2 sm:p-3 bg-white shadow-sm hover:border-brand-300 transition-colors cursor-default">
                     <div className="text-[9px] sm:text-xs font-mono text-zinc-400 mb-0.5 sm:mb-1">#ORD-092</div>
                     <div className="text-[10px] sm:text-sm font-medium text-zinc-900 leading-tight">Armário Embutido</div>
                     <div className="text-[8px] sm:text-xs text-zinc-500 mt-1 sm:mt-2">Cliente: Carlos R.</div>
                   </div>
-                  
+
                   <div className="border border-zinc-200 p-2 sm:p-3 bg-white shadow-sm hover:border-brand-300 transition-colors cursor-default">
                     <div className="text-[9px] sm:text-xs font-mono text-zinc-400 mb-0.5 sm:mb-1">#ORD-093</div>
                     <div className="text-[10px] sm:text-sm font-medium text-zinc-900 leading-tight">Mesa Escritório</div>
@@ -77,22 +82,12 @@ const Solution = () => {
                     <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-brand-500"></span>
                     <span className="text-[9px] sm:text-[10px] font-semibold text-zinc-700 uppercase tracking-wide">Produção</span>
                   </div>
-                  
+
                   <div className="border border-dashed border-brand-300 bg-brand-50/50 p-2 sm:p-3 relative">
                     <div className="absolute top-0 left-0 w-0.5 sm:w-1 h-full bg-brand-500"></div>
                     <div className="text-[9px] sm:text-xs font-mono text-zinc-400 mb-0.5 sm:mb-1">#ORD-091</div>
                     <div className="text-[10px] sm:text-sm font-medium text-zinc-900 leading-tight">Cozinha Completa</div>
                     <div className="text-[8px] sm:text-xs text-zinc-500 mt-1 sm:mt-2">Cliente: João S.</div>
-                    
-                    <div className="mt-2 sm:mt-3">
-                      <div className="flex justify-between text-[8px] sm:text-[10px] text-zinc-500 mb-1">
-                        <span>Progresso</span>
-                        <span>80%</span>
-                      </div>
-                      <div className="h-0.5 sm:h-1 w-full bg-zinc-200 overflow-hidden">
-                        <div className="h-full bg-brand-500 w-[80%]"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -109,27 +104,27 @@ const Solution = () => {
           >
             <div className="text-brand-500 text-[10px] sm:text-xs font-semibold tracking-wider uppercase mb-2 sm:mb-3">A Solução</div>
             <h2 className="text-3xl lg:text-4xl font-bold text-zinc-900 mb-4 sm:mb-6 tracking-tight">
-              Organização <br className="hidden sm:block"/>estrutural.
+              A resposta exata para <br className="hidden sm:block" />seus gargalos.
             </h2>
             <p className="text-zinc-600 mb-8 sm:mb-10 leading-relaxed text-sm sm:text-base">
-              O ecossistema perfeito para gerenciar projetos. Menos planilhas, mais controle sobre o chão de fábrica e faturamento.
+              Nós não entregamos apenas um software. Entregamos um ecossistema que resolve cada etapa do seu negócio: do primeiro clique do cliente até o lucro no bolso.
             </p>
 
             {/* Mobile Grid instead of pure stack! */}
             <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 sm:gap-8 relative">
               {/* Connecting dashed line behind icons on desktop */}
               <div className="absolute top-4 bottom-4 left-4 w-px border-l border-dashed border-zinc-200 -z-10 hidden sm:block"></div>
-              
+
               {/* Force grid layout on mobile too for features */}
               <div className="grid grid-cols-2 gap-4 sm:block sm:space-y-8">
                 {features.map((feature, index) => (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className={`flex flex-col sm:flex-row gap-3 sm:gap-4 relative bg-white ${index === 2 ? 'col-span-2 sm:col-span-1 flex-row' : ''}`}
+                    className="flex flex-col sm:flex-row gap-3 sm:gap-4 relative bg-white"
                   >
                     <div className="flex-shrink-0 w-8 h-8 sm:w-8 sm:h-8 rounded-sm border border-zinc-200 bg-zinc-50 flex items-center justify-center relative z-10 shadow-sm">
                       {feature.icon}

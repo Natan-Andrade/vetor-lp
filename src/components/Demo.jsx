@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  LayoutDashboard, 
-  ShoppingCart, 
-  Users, 
-  Plus, 
-  X, 
-  Check, 
-  Clock, 
-  Hammer, 
-  ChevronRight 
+import {
+  LayoutDashboard,
+  ShoppingCart,
+  Users,
+  Plus,
+  X,
+  Check,
+  Clock,
+  Hammer,
+  ChevronRight
 } from 'lucide-react';
 
 const Demo = () => {
@@ -30,7 +30,7 @@ const Demo = () => {
   const handleCreateOrder = (e) => {
     e.preventDefault();
     if (!newOrder.client || !newOrder.type) return;
-    
+
     const id = `ORD-00${orders.length + 1}`;
     setOrders([{ id, client: newOrder.client, type: newOrder.type, status: 'Orçamento' }, ...orders]);
     setNewOrder({ client: '', type: '' });
@@ -79,22 +79,22 @@ const Demo = () => {
           >
             Demonstração Interativa
           </motion.div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-2xl sm:text-4xl font-bold text-zinc-900 mb-4 tracking-tight"
           >
-            Test drive do sistema
+            Veja o sistema em ação
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-sm sm:text-base text-zinc-600 max-w-2xl mx-auto"
           >
-            Crie um pedido e avance seu status para ver como a gestão fica fluida. 
+            Crie um pedido e avance seu status para ver como a gestão fica fluida.
             Uma interface estilo <strong>Filament</strong> pensada para produtividade.
           </motion.p>
         </div>
@@ -114,7 +114,7 @@ const Demo = () => {
                 <div className="w-6 h-6 rounded bg-brand-500 flex items-center justify-center">
                   <LayoutDashboard className="w-3 h-3 text-white" />
                 </div>
-                Marcenaria<span className="text-brand-500">App</span>
+                Vetor
               </div>
             </div>
             <div className="p-4 flex-1">
@@ -147,7 +147,7 @@ const Demo = () => {
 
             {/* Content Area */}
             <main className="flex-1 p-4 sm:p-8 overflow-y-auto">
-              
+
               {/* Stats Widgets */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                 <div className="bg-white p-5 rounded-xl border border-zinc-200 shadow-sm flex flex-col justify-between">
@@ -178,7 +178,7 @@ const Demo = () => {
                     <h3 className="font-semibold text-zinc-900 text-lg">Últimos Pedidos</h3>
                     <p className="text-xs text-zinc-500">Gerencie o fluxo de trabalho</p>
                   </div>
-                  <button 
+                  <button
                     onClick={() => setIsModalOpen(true)}
                     className="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 text-sm font-medium rounded-lg flex items-center justify-center gap-2 transition-colors shadow-sm"
                   >
@@ -201,7 +201,7 @@ const Demo = () => {
                     <tbody>
                       <AnimatePresence>
                         {orders.map((order) => (
-                          <motion.tr 
+                          <motion.tr
                             key={order.id}
                             initial={{ opacity: 0, backgroundColor: "#fff5f5" }}
                             animate={{ opacity: 1, backgroundColor: "#ffffff" }}
@@ -221,7 +221,7 @@ const Demo = () => {
                               </span>
                             </td>
                             <td className="px-6 py-4 text-right">
-                              <button 
+                              <button
                                 onClick={() => cycleStatus(order.id)}
                                 className="inline-flex items-center justify-center text-xs font-medium text-zinc-500 bg-white border border-zinc-200 rounded-md px-3 py-1.5 hover:bg-zinc-50 hover:text-brand-600 transition-colors shadow-sm"
                               >
@@ -241,13 +241,13 @@ const Demo = () => {
             {/* Modal de Criação (Overlay) */}
             <AnimatePresence>
               {isModalOpen && (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   className="absolute inset-0 bg-zinc-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-4"
                 >
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, scale: 0.95, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -255,35 +255,35 @@ const Demo = () => {
                   >
                     <div className="flex justify-between items-center px-6 py-4 border-b border-zinc-100">
                       <h3 className="font-semibold text-zinc-900">Novo Pedido</h3>
-                      <button 
+                      <button
                         onClick={() => setIsModalOpen(false)}
                         className="text-zinc-400 hover:text-zinc-600 transition-colors"
                       >
                         <X className="w-5 h-5" />
                       </button>
                     </div>
-                    
+
                     <form onSubmit={handleCreateOrder} className="p-6">
                       <div className="space-y-4">
                         <div>
                           <label className="block text-sm font-medium text-zinc-700 mb-1">Nome do Cliente</label>
-                          <input 
-                            type="text" 
+                          <input
+                            type="text"
                             required
                             autoFocus
                             value={newOrder.client}
-                            onChange={(e) => setNewOrder({...newOrder, client: e.target.value})}
+                            onChange={(e) => setNewOrder({ ...newOrder, client: e.target.value })}
                             className="w-full px-3 py-2 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all text-sm"
                             placeholder="Ex: João Silva"
                           />
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-zinc-700 mb-1">Tipo de Projeto</label>
-                          <input 
-                            type="text" 
+                          <input
+                            type="text"
                             required
                             value={newOrder.type}
-                            onChange={(e) => setNewOrder({...newOrder, type: e.target.value})}
+                            onChange={(e) => setNewOrder({ ...newOrder, type: e.target.value })}
                             className="w-full px-3 py-2 border border-zinc-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all text-sm"
                             placeholder="Ex: Armário de Cozinha"
                           />
@@ -291,14 +291,14 @@ const Demo = () => {
                       </div>
 
                       <div className="mt-8 flex justify-end gap-3">
-                        <button 
+                        <button
                           type="button"
                           onClick={() => setIsModalOpen(false)}
                           className="px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 border border-zinc-200 rounded-lg transition-colors"
                         >
                           Cancelar
                         </button>
-                        <button 
+                        <button
                           type="submit"
                           className="px-4 py-2 text-sm font-medium text-white bg-brand-500 hover:bg-brand-600 rounded-lg transition-colors shadow-sm flex items-center gap-2"
                         >
@@ -311,7 +311,7 @@ const Demo = () => {
                 </motion.div>
               )}
             </AnimatePresence>
-            
+
           </div>
         </motion.div>
       </div>
