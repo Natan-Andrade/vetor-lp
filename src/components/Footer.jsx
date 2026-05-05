@@ -19,13 +19,13 @@ const Footer = () => {
           </div>
 
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5511945235279?text=Ol%C3%A1%2C%20vim%20pelo%20site%20sistemavetor.com.br%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             onClick={() => trackWhatsAppClick('Footer')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-brand-500 hover:bg-brand-600 rounded-md transition-colors shadow-sm"
           >
-            Solicitar Proposta
+            Solicitar Orçamento
           </a>
         </div>
 

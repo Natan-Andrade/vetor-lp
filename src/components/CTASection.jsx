@@ -29,7 +29,7 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CTAButton
-              href="https://wa.me/5511999999999?text=Quero%20solicitar%20uma%20demonstração%20do%20sistema!"
+              href="https://wa.me/5511945235279?text=Ol%C3%A1%2C%20vim%20pelo%20site%20sistemavetor.com.br%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
               variant="primary"
               className="px-8"
               trackingLocation="Bottom CTA - Primary"

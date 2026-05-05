@@ -32,11 +32,11 @@ const Hero = () => {
             {/* Buttons */}
             <div className="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-4">
               <CTAButton
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5511945235279?text=Ol%C3%A1%2C%20vim%20pelo%20site%20sistemavetor.com.br%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
                 trackingLocation="Hero - WhatsApp"
                 className="col-span-2 sm:col-span-1 rounded-sm !px-4 !py-3 font-bold uppercase tracking-wide text-xs sm:text-sm"
               >
-                Solicitar Proposta <ArrowRight className="w-4 h-4 ml-1" />
+                Solicitar Orçamento <ArrowRight className="w-4 h-4 ml-1" />
               </CTAButton>
               <CTAButton
                 href="#demo"

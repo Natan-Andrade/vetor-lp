@@ -38,23 +38,23 @@ const Header = () => {
             </ul>
           </nav>
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5511945235279?text=Ol%C3%A1%2C%20vim%20pelo%20site%20sistemavetor.com.br%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
             target="_blank"
             rel="noopener noreferrer"
             className="h-full px-6 flex items-center text-sm font-medium text-white bg-brand-500 hover:bg-brand-600 transition-colors"
           >
-            Solicitar Proposta
+            Solicitar Orçamento
           </a>
         </div>
 
         {/* Mobile CTA */}
         <a
-          href="https://wa.me/5511999999999"
+          href="https://wa.me/5511945235279?text=Ol%C3%A1%2C%20vim%20pelo%20site%20sistemavetor.com.br%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento"
           target="_blank"
           rel="noopener noreferrer"
           className="md:hidden px-4 py-1.5 mr-4 text-sm font-medium text-white bg-brand-500 hover:bg-brand-600 rounded-md transition-colors"
         >
-          Solicitar Proposta
+          Solicitar Orçamento
         </a>
       </div>
     </header>
