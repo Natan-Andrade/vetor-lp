@@ -31,16 +31,20 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-4">
-              <CTAButton href="#demo" trackingLocation="Hero - Demo" className="col-span-2 sm:col-span-1 rounded-sm !px-4 !py-3 font-bold uppercase tracking-wide text-xs sm:text-sm">
-                Ver demo <ArrowRight className="w-4 h-4 ml-1" />
-              </CTAButton>
               <CTAButton
                 href="https://wa.me/5511999999999"
-                variant="secondary"
                 trackingLocation="Hero - WhatsApp"
+                className="col-span-2 sm:col-span-1 rounded-sm !px-4 !py-3 font-bold uppercase tracking-wide text-xs sm:text-sm"
+              >
+                Solicitar Proposta <ArrowRight className="w-4 h-4 ml-1" />
+              </CTAButton>
+              <CTAButton
+                href="#demo"
+                variant="secondary"
+                trackingLocation="Hero - Demo"
                 className="col-span-2 sm:col-span-1 rounded-sm !px-4 !py-3 font-bold uppercase tracking-wide text-xs sm:text-sm bg-white/90"
               >
-                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-brand-500" /> Falar agora
+                Ver demonstração
               </CTAButton>
             </div>
           </motion.div>

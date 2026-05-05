@@ -34,10 +34,10 @@ function App() {
     <div className="font-sans antialiased text-zinc-900 selection:bg-brand-100 selection:text-brand-900 min-h-screen flex justify-center px-0 sm:px-6 lg:px-8 bg-transparent">
       <div className="w-full max-w-[85rem] bg-white/90 sm:border-x border-grid min-h-screen relative shadow-none sm:shadow-[0_0_60px_rgba(0,0,0,0.03)] flex flex-col">
         <Header />
-        
+
         <main className="flex-1 pt-16 flex flex-col gap-12 sm:gap-0 pb-12 sm:pb-0">
           <Hero />
-          
+
           <Suspense fallback={<div className="h-32 flex items-center justify-center text-zinc-300 text-xs">Carregando...</div>}>
             <div id="problema">
               <Problem />
@@ -49,7 +49,7 @@ function App() {
             <div id="benefits">
               <Benefits />
             </div>
-            <SocialProof />
+            {/* <SocialProof /> */}
             <CTASection />
           </Suspense>
         </main>

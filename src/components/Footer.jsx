@@ -5,35 +5,28 @@ const Footer = () => {
   return (
     <footer className="bg-transparent text-zinc-600 pb-12 pt-16">
       <div className="px-6 lg:px-12">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div className="col-span-2">
-            <div className="flex items-center gap-3 mb-4">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-12">
+          <div>
+            <div className="flex items-center gap-0.5 mb-4">
               <div className="flex items-center justify-center w-6 h-6 bg-brand-500 rounded text-white font-bold text-sm leading-none">
                 V
               </div>
-              <span className="font-semibold text-zinc-900 tracking-tight">Vetor</span>
+              <span className="font-semibold text-zinc-900 tracking-tight">etor</span>
             </div>
             <p className="text-xs max-w-xs leading-relaxed">
               Desenvolvemos sistemas de gestão e landing pages sob medida para marcenarias. Cada projeto é único, assim como o seu negócio.
             </p>
           </div>
 
-          <div>
-            <h4 className="text-zinc-900 font-semibold mb-4 text-sm uppercase tracking-wider">Contato</h4>
-            <ul className="space-y-3 text-xs font-medium">
-              <li>
-                <a
-                  href="https://wa.me/5511999999999"
-                  onClick={() => trackWhatsAppClick('Footer')}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-brand-500 transition-colors"
-                >
-                  Falar com Comercial
-                </a>
-              </li>
-            </ul>
-          </div>
+          <a
+            href="https://wa.me/5511999999999"
+            onClick={() => trackWhatsAppClick('Footer')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-brand-500 hover:bg-brand-600 rounded-md transition-colors shadow-sm"
+          >
+            Solicitar Proposta
+          </a>
         </div>
 
         <div className="pt-8 border-t border-grid text-xs flex flex-col md:flex-row justify-between items-center gap-4">
