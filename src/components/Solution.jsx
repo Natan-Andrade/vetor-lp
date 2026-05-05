@@ -107,7 +107,7 @@ const Solution = () => {
               A resposta exata para <br className="hidden sm:block" />seus gargalos.
             </h2>
             <p className="text-zinc-600 mb-8 sm:mb-10 leading-relaxed text-sm sm:text-base">
-              Nós não entregamos apenas um software. Entregamos um ecossistema que resolve cada etapa do seu negócio: do primeiro clique do cliente até o lucro no bolso.
+              Nós desenvolvemos sob medida cada ferramenta que a sua marcenaria precisa. Do site que capta clientes ao painel que controla a produção — tudo pensado para a sua realidade.
             </p>
 
             {/* Mobile Grid instead of pure stack! */}

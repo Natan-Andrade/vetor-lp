@@ -17,7 +17,7 @@ const Hero = () => {
           >
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-sm bg-white/90 border border-zinc-200 text-zinc-600 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-6 sm:mb-8 shadow-sm">
               <span className="flex h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse"></span>
-              v2.0
+              Sob Medida
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-zinc-900 leading-[1.05] mb-4 sm:mb-6">
@@ -62,13 +62,13 @@ const Hero = () => {
                 <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-zinc-700"></div>
                 <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-zinc-700"></div>
                 <div className="ml-auto text-[9px] sm:text-[10px] text-zinc-500 flex items-center gap-2">
-                  <span className="text-brand-500 font-bold">~</span>/marcenaria/app
+                  <span className="text-brand-500 font-bold">~</span>/vetor/projeto
                 </div>
               </div>
 
               {/* Fake Code / Dashboard area */}
               <div className="p-4 sm:p-6 text-[10px] sm:text-xs leading-relaxed text-zinc-400 overflow-x-auto hide-scrollbar">
-                <div><span className="text-brand-400">import</span> <span className="text-blue-300">Workspace</span> <span className="text-brand-400">from</span> <span className="text-green-300">'@marcenaria/core'</span>;</div>
+                <div><span className="text-brand-400">import</span> <span className="text-blue-300">Workspace</span> <span className="text-brand-400">from</span> <span className="text-green-300">'@vetor/gestao'</span>;</div>
                 <div className="mt-3 sm:mt-4"><span className="text-brand-400">const</span> projeto = <span className="text-blue-300">Workspace</span>.build(&#123;</div>
                 <div className="pl-4">client: <span className="text-green-300">'João Silva'</span>,</div>
                 <div className="pl-4">type:   <span className="text-green-300">'Cozinha Planejada'</span>,</div>

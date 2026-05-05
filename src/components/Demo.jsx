@@ -114,7 +114,7 @@ const Demo = () => {
                 <div className="w-6 h-6 rounded bg-brand-500 flex items-center justify-center">
                   <LayoutDashboard className="w-3 h-3 text-white" />
                 </div>
-                Vetor
+                Sua Marca
               </div>
             </div>
             <div className="p-4 flex-1">

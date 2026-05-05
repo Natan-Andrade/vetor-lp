@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="font-semibold text-zinc-900 tracking-tight">Vetor</span>
             </div>
             <p className="text-xs max-w-xs leading-relaxed">
-              O ecossistema definitivo para gestão de pequenas e médias marcenarias. Código limpo, interface elegante, gestão sem atrito.
+              Desenvolvemos sistemas de gestão e landing pages sob medida para marcenarias. Cada projeto é único, assim como o seu negócio.
             </p>
           </div>
 
